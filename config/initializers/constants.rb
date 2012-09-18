@@ -1,0 +1,3 @@
+ADMIN_USERNAME = (ENV['ADMIN_USERNAME'] or 'username')
+ADMIN_PASSWORD = (ENV['ADMIN_PASSWORD'] or 'password')
+FACEBOOK_APP_ID = ''

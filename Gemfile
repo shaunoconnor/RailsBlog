@@ -7,7 +7,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 
 # Elastic search
-gem 'tire'
+#gem 'tire'
 
 # Web server
 gem 'thin'
@@ -25,7 +25,10 @@ gem 'redcarpet'
 gem 'pygmentize'
 
 # HTML Parsing
-gem 'nokogiri'
+#gem 'nokogiri'
+
+#
+gem 'asset_sync'
 
 group :assets do
   # Stylesheet
@@ -40,16 +43,12 @@ group :assets do
 end
 
 group :development do
-  gem 'heroku'
-  gem 'taps'
   gem 'sqlite3'
   gem 'quiet_assets'
-  gem 'foreman'
 end
 
 group :test do
   gem 'minitest'
-  gem 'miniskirt', require: false
   gem 'capybara'
   gem 'turn'
   gem 'simplecov', :require => false

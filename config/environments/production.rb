@@ -3,7 +3,7 @@ ShaunOConnorBlog::Application.configure do
   # config.middleware.insert_before 0, 'ShaunOConnor::PreferredHost'
 
   # Code is not reloaded between requests
-  config.cache_classes = true
+  config.cache_classes = false
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = true

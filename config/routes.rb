@@ -9,9 +9,7 @@ ShaunOConnorBlog::Application.routes.draw do
   resources :tags, only: [:index, :show]
 
   # Static pages
-  #match '/music', to: 'pages#music', as: 'music'
   #match '/about', to: 'pages#about', as: 'about'
-  #match '/talks', to: 'pages#talks', as: 'talks'
   #match '/projects', to: 'pages#projects', as: 'projects'
 
   # Redirects

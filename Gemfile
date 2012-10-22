@@ -24,7 +24,6 @@ group :assets do
 end
 
 group :development do
-  gem 'heroku'
   gem 'sqlite3'
   gem 'quiet_assets'
 end
@@ -37,5 +36,5 @@ group :test do
 end
 
 group :production do
-  gem 'dalli'
+  # gem 'dalli'
 end

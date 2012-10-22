@@ -5,7 +5,7 @@ log/*.log
 tmp/**/*
 dump.rdb
 tmp
-posts
+#posts
 .sass-cache
 public/stylesheets
 public/assets
@@ -13,3 +13,4 @@ public/assets
 coverage
 rails_best_practices_output.html
 .powder
+.somthing

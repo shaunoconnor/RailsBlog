@@ -1,12 +1,12 @@
 ShaunOConnorBlog::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  # config.middleware.insert_before 0, 'SamSoffes::PreferredHost'
+  # config.middleware.insert_before 0, 'ShaunOConnor::PreferredHost'
 
   # Code is not reloaded between requests
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)

@@ -12,7 +12,7 @@ class ShaunOConnorBlog::PreferredHost
     # Not the standard host
     if host != @preferred_host
       url.host = @preferred_host
-      url.path = "/posts#{url.path}" if host == 'blog.samsoff.es' and url.path != '/'
+      url.path = "/posts#{url.path}" if host == 'blog.shaun-oconnor.com' and url.path != '/'
       headers = { 'Location' => url.to_s }
       [301, headers, []]
 

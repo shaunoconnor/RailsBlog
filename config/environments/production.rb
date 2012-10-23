@@ -6,7 +6,7 @@ ShaunOConnorBlog::Application.configure do
   config.cache_classes = false
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
@@ -14,14 +14,14 @@ ShaunOConnorBlog::Application.configure do
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
-  config.assets.precompile += ['admin.js', 'music.js', 'talks.css', 'admin.css']
+  config.assets.precompile += ['admin.js', 'admin.css']
 
   #config.action_controller.asset_host = Proc.new do |source, request|
   #  request.ssl? ? "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com" : "http://#{ENV['FOG_DIRECTORY']}"
   #end
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = falseo
 
   # Generate digests for assets URLs
   config.assets.digest = true

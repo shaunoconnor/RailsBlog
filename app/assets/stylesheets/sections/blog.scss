@@ -11,10 +11,30 @@ section article {
       a {
         color: #949494;
         border: 0;
+        
+        &:hover {
+          
+          //border-bottom: 1px solid;
+        }
+
       }
     }
   }
-  
+  p {
+    
+    a {
+      color: #000;
+      border: 0;
+      font-weight: 500;
+      
+      &:hover {
+        
+        border-bottom: 1px solid;
+      }
+
+    }
+  }
+
   ul, ol {
     margin: 0 0 2em 0.5em;
     

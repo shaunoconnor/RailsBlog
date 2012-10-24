@@ -45,6 +45,7 @@ end
 group :development do
   gem 'sqlite3'
   gem 'quiet_assets'
+  gem 'foreman'
 end
 
 group :test do

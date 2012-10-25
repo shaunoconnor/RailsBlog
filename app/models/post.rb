@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
   scope :recent, order('published_at DESC')
 
   def self.per_page
-    3
+    4
   end
 
   def tag_names

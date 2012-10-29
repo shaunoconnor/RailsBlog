@@ -182,8 +182,9 @@ body > header {
   margin: 5em auto 4em;
   
   p {
+    color: #222;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1em;
   }
   
   @media #{$small-query} {

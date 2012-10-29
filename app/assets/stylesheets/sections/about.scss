@@ -19,3 +19,16 @@ div#ZE-widget {
   margin: 2em auto 0;
   width: 302px;
 }
+
+a {
+      color: #000;
+      border: 0;
+      font-weight: 700;
+      
+      //border-bottom: 1px solid;
+
+      &:hover {
+        
+        border-bottom: 1px solid;
+     }
+}

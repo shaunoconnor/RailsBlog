@@ -1,5 +1,7 @@
 ShaunOConnorBlog::Application.routes.draw do
   
+  resources :works
+
   # Blog
   root to: 'posts#index'
   match '/blog/:page', to: 'posts#index', as: 'blog_page'

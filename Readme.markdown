@@ -15,7 +15,7 @@ Get [Bundler](http://gembundler.com) `gem install bundler`
 
 Setup the database's
 
-	$ rvm 1.9.3
+	  $ rvm 1.9.3
     $ bundle install
     $ rake db:create
     $ rake db:schema:load

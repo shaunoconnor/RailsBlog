@@ -56,13 +56,12 @@ group :test do
 end
 
 group :production do
-<<<<<<< HEAD
+
   # Memcached
   gem 'dalli'
 
   # Assets
   gem 'asset_sync'
-=======
   # gem 'dalli'
->>>>>>> 1850ad5377cba69fe1399f6e845ad5329ec405ad
+
 end

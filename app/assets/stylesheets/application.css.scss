@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
 @import "bourbon";
 @import "globals/*";
 @import "components/reset";
@@ -19,11 +21,12 @@ html {
 
 body {
   color: $text-color;
-  font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5em;
   padding: 0 20px;
+  text-align: center;
 }
 
 input {
@@ -72,10 +75,12 @@ hr {
 }
 
 blockquote {
-  border-left: 5px solid #ddd;
+  //border-left: 5px solid #ddd;
+  border-left: 0px solid #ddd;
   color: #888;
   margin: 0 0 1em;
-  padding-left: 1em;
+  //padding-left: 1em;
+  padding-left: 0em;
   
   a {
     color: $link-color;

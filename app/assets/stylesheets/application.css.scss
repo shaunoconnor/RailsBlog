@@ -139,6 +139,10 @@ h1 {
   font-weight: 700;
   line-height: 1em;
   margin-bottom: 0.5em;
+
+  @media #{$small-query} {
+    font-size: 1.6em;
+  }
 }
 
 body > header h1 {

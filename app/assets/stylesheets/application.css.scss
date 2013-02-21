@@ -141,7 +141,7 @@ h1 {
   margin-bottom: 0.5em;
 
   @media #{$small-query} {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   -o-transition:all .2s ease-in-out; 
@@ -195,7 +195,7 @@ body > section {
   margin-top: 16em; // gap to accomodate new header
   
   @media #{$small-query} {
-     margin-top: 13em; // gap to accomodate new header
+     margin-top: 10em; // gap to accomodate new header
   }
 }
 
@@ -211,8 +211,8 @@ body > header {
   z-index: 1000;
   border-bottom: 2px solid #ddd;
   color: #949494;
-  padding-top: 3.4em;
-  padding-bottom  : 3.4em;
+  padding-top: 2.4em;
+  padding-bottom  : 2.4em;
 
   @include background-opacity(#fff, 0.9);
   
@@ -220,6 +220,10 @@ body > header {
     color: #222;
     margin: 0;
     font-size: 1em;
+
+    @media #{$small-query} {
+      font-size: .8em;
+    }
   }
   
   @media #{$small-query} {

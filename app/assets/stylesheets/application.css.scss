@@ -135,14 +135,18 @@ code {
 
 h1 {
   color: #000;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 700;
   line-height: 1em;
   margin-bottom: 0.5em;
 
   @media #{$small-query} {
-    font-size: 1.6em;
+    font-size: 2em;
   }
+
+  -o-transition:all .2s ease-in-out; 
+  -moz-transition:all .2s ease-in-out; 
+  -webkit-transition:all .2s ease-in-out;
 }
 
 body > header h1 {
@@ -180,15 +184,37 @@ h4 {
 }
 
 // Content
-body > header, body > section, body > footer {
+//body > header, 
+body > section, body > footer {
   max-width: $width;
   margin: 0 auto;
 }
 
+body > section {
+
+  margin-top: 16em; // gap to accomodate new header
+  
+  @media #{$small-query} {
+     margin-top: 13em; // gap to accomodate new header
+  }
+}
+
 // Header
 body > header {
+
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+  z-index: 1000;
+  border-bottom: 2px solid #ddd;
   color: #949494;
-  margin: 5em auto 4em;
+  padding-top: 3.4em;
+  padding-bottom  : 3.4em;
+
+  @include background-opacity(#fff, 0.9);
   
   p {
     color: #222;
@@ -197,8 +223,14 @@ body > header {
   }
   
   @media #{$small-query} {
-    margin: 3em auto;
+    height: 40px;
   }
+
+  -o-transition:all .2s ease-in-out; 
+  -moz-transition:all .2s ease-in-out; 
+  -webkit-transition:all .2s ease-in-out;
+
+  //@include animation(all .2s ease-in-out);
 }
 
 a.hire, a.hire:hover {

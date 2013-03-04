@@ -140,16 +140,19 @@ h1 {
   line-height: 1em;
   margin-bottom: 0.5em;
 
-  @media #{$small-query} {
-    font-size: 1.6em;
-  }
-
   -o-transition:all .2s ease-in-out; 
   -moz-transition:all .2s ease-in-out; 
   -webkit-transition:all .2s ease-in-out;
 }
 
 body > header h1 {
+  
+  font-size: 3.8em;
+
+  @media #{$small-query} {
+     font-size: 2em;
+  }
+
   a, a:hover {
     color: $red-color;
     border: 0;
@@ -192,12 +195,18 @@ body > section, body > footer {
 
 body > section {
 
-  margin-top: 16em; // gap to accomodate new header
+  margin-top: 13em; // gap to accomodate new header
   
   @media #{$small-query} {
-     margin-top: 10em; // gap to accomodate new header
+     margin-top: 11em; // gap to accomodate new header
   }
+
+  -o-transition:all .2s ease-in-out; 
+  -moz-transition:all .2s ease-in-out; 
+  -webkit-transition:all .2s ease-in-out;
+
 }
+
 
 // Header
 body > header {
@@ -218,16 +227,24 @@ body > header {
   
   p {
     color: #222;
-    margin: 0;
-    font-size: 1em;
+    margin: 10px;
+    font-size:1em;
 
     @media #{$small-query} {
-      font-size: .8em;
+      // font-size: 1em;
+
+      // margin: 20px; 
+    }
+  }
+  nav{ 
+    @media #{$small-query} {
+    
+      // width: 280px;
     }
   }
   
   @media #{$small-query} {
-    height: 40px;
+    height: 60px;
   }
 
   -o-transition:all .2s ease-in-out; 

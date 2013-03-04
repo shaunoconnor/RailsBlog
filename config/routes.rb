@@ -12,7 +12,7 @@ ShaunOConnorBlog::Application.routes.draw do
 
   # Static pages
   match '/about', to: 'pages#about', as: 'about'
-  #match '/projects', to: 'pages#projects', as: 'projects'
+  match '/projects', to: 'pages#projects', as: 'projects'
 
   # Redirects
   match '/blog', to: redirect('/')

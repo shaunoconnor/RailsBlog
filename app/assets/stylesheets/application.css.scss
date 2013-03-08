@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 @import "bourbon";
 @import "globals/*";
@@ -21,7 +20,7 @@ html {
 
 body {
   color: $text-color;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5em;

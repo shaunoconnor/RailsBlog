@@ -194,7 +194,7 @@ body > section, body > footer {
 
 body > section {
 
-  margin-top: 13em; // gap to accomodate new header
+  margin-top: 15em; // gap to accomodate new header
   
   @media #{$small-query} {
      margin-top: 11em; // gap to accomodate new header
@@ -210,7 +210,7 @@ body > section {
 // Header
 body > header {
 
-  height: 80px;
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;

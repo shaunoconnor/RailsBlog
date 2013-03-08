@@ -197,7 +197,7 @@ body > section {
   margin-top: 15em; // gap to accomodate new header
   
   @media #{$small-query} {
-     margin-top: 11em; // gap to accomodate new header
+     margin-top: 14em; // gap to accomodate new header
   }
 
   -o-transition:all .2s ease-in-out; 
@@ -243,7 +243,7 @@ body > header {
   }
   
   @media #{$small-query} {
-    height: 60px;
+    height: 100px;
   }
 
   -o-transition:all .2s ease-in-out; 

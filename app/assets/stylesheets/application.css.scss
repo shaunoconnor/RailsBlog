@@ -194,18 +194,16 @@ body > section, body > footer {
 
 body > section {
 
-  margin-top: 15em; // gap to accomodate new header
+  margin-top: 15em;
   
   @media #{$small-query} {
-     margin-top: 14em; // gap to accomodate new header
+     margin-top: 14em;
   }
 
   -o-transition:all .2s ease-in-out; 
   -moz-transition:all .2s ease-in-out; 
   -webkit-transition:all .2s ease-in-out;
-
 }
-
 
 // Header
 body > header {

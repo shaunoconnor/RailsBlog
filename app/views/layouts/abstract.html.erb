@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  
+
   <title>Shaun O'Connor – Creative Technologist – <%= (yield(:title) && !yield(:title).empty? ? yield(:title) : 'Title') %></title>
-  
+
   <link href="<%= posts_url(format: :atom) %>" rel="alternate" title="title" type="application/atom+xml" />
-  
+
   <link rel="apple-touch-icon-precomposed" href="">
-  
+
   <link rel="author" type="text/plain" href="humans.txt" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="Author" content="Shaun O'Connor" />
@@ -24,6 +24,7 @@
   <meta property="og:title" content="shaun-oconnor.com" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://blog.shaun-oconnor.com" />
+  <meta property="og:image" content="http://blog.shaun-oconnor.com/427021_10150767428326929_738390198_n.jpg" />
   <%- end -%>
   <%= yield(:head) -%>
 </head>

@@ -38,7 +38,7 @@ a {
   border-bottom: 1px solid transparent;
   @include transition-property(color);
   @include transition-duration(0.2s);
-  
+
   &:hover {
     // border-bottom: 1px solid;
   }
@@ -145,7 +145,7 @@ h1 {
 }
 
 body > header h1 {
-  
+
   font-size: 3.8em;
 
   @media #{$small-query} {
@@ -241,7 +241,7 @@ body > header {
   }
   
   @media #{$small-query} {
-    height: 6660px;
+    height: 66px;
   }
 
   -o-transition:all .2s ease-in-out; 

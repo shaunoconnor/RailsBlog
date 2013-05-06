@@ -38,7 +38,7 @@ a {
   border-bottom: 1px solid transparent;
   @include transition-property(color);
   @include transition-duration(0.2s);
-  
+
   &:hover {
     // border-bottom: 1px solid;
   }
@@ -145,7 +145,7 @@ h1 {
 }
 
 body > header h1 {
-  
+
   font-size: 3.8em;
 
   @media #{$small-query} {
@@ -194,23 +194,21 @@ body > section, body > footer {
 
 body > section {
 
-  margin-top: 13em; // gap to accomodate new header
+  margin-top: 15em;
   
   @media #{$small-query} {
-     margin-top: 11em; // gap to accomodate new header
+     margin-top: 14em;
   }
 
   -o-transition:all .2s ease-in-out; 
   -moz-transition:all .2s ease-in-out; 
   -webkit-transition:all .2s ease-in-out;
-
 }
-
 
 // Header
 body > header {
 
-  height: 80px;
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -243,7 +241,7 @@ body > header {
   }
   
   @media #{$small-query} {
-    height: 60px;
+    height: 66px;
   }
 
   -o-transition:all .2s ease-in-out; 

@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 @import "bourbon";
 @import "globals/*";
@@ -21,7 +20,7 @@ html {
 
 body {
   color: $text-color;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5em;
@@ -135,17 +134,24 @@ code {
 
 h1 {
   color: #000;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 700;
   line-height: 1em;
   margin-bottom: 0.5em;
 
-  @media #{$small-query} {
-    font-size: 1.6em;
-  }
+  -o-transition:all .2s ease-in-out; 
+  -moz-transition:all .2s ease-in-out; 
+  -webkit-transition:all .2s ease-in-out;
 }
 
 body > header h1 {
+  
+  font-size: 3.8em;
+
+  @media #{$small-query} {
+     font-size: 2em;
+  }
+
   a, a:hover {
     color: $red-color;
     border: 0;
@@ -180,25 +186,71 @@ h4 {
 }
 
 // Content
-body > header, body > section, body > footer {
+//body > header, 
+body > section, body > footer {
   max-width: $width;
   margin: 0 auto;
 }
 
+body > section {
+
+  margin-top: 13em; // gap to accomodate new header
+  
+  @media #{$small-query} {
+     margin-top: 11em; // gap to accomodate new header
+  }
+
+  -o-transition:all .2s ease-in-out; 
+  -moz-transition:all .2s ease-in-out; 
+  -webkit-transition:all .2s ease-in-out;
+
+}
+
+
 // Header
 body > header {
+
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+  z-index: 1000;
+  border-bottom: 2px solid #ddd;
   color: #949494;
-  margin: 5em auto 4em;
+  padding-top: 2.4em;
+  padding-bottom  : 2.4em;
+
+  @include background-opacity(#fff, 0.9);
   
   p {
     color: #222;
-    margin: 0;
-    font-size: 1em;
+    margin: 10px;
+    font-size:1em;
+
+    @media #{$small-query} {
+      // font-size: 1em;
+
+      // margin: 20px; 
+    }
+  }
+  nav{ 
+    @media #{$small-query} {
+    
+      // width: 280px;
+    }
   }
   
   @media #{$small-query} {
-    margin: 3em auto;
+    height: 60px;
   }
+
+  -o-transition:all .2s ease-in-out; 
+  -moz-transition:all .2s ease-in-out; 
+  -webkit-transition:all .2s ease-in-out;
+
+  //@include animation(all .2s ease-in-out);
 }
 
 a.hire, a.hire:hover {

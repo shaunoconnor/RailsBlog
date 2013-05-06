@@ -32,3 +32,43 @@ The site should be running at <http://localhost:5000>
 ## Production
 
 Use [heroku](http://heroku.com)
+
+
+## Running Locally with Vagrant
+
+    $ cd /project_name
+
+  Initialise vagrant
+
+    $ vagrant init
+
+  Start the box
+
+    $ vagrant up
+
+  ssh to the box
+
+    $ vagrant ssh
+
+  change directory to vagrant
+
+    $ cd /vagrant
+
+  Install dependencies
+
+    $ bundle install
+
+  Start the rails app
+
+    $ bundle exec rails s
+
+  If you need to change the VagrantFile, run
+
+    $ vagrant reload
+
+
+  If you need sqlite in development, run
+
+    $ sudo apt-get install libsqlite3-dev
+
+

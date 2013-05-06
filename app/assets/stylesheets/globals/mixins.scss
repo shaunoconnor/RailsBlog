@@ -1,4 +1,5 @@
 @import "bourbon";
+@import "css3/animation";
 
 @mixin bordered-image {
   display: block;
@@ -15,4 +16,21 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@mixin transparent($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  @extend .transparent-background;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin doanimate {
+  @include animation(all .2s ease-in-out);
 }

@@ -1,67 +1,68 @@
-source 'https://rubygems.org'
+  source 'https://rubygems.org'
 
-# Rails
-gem 'rails', '3.2.11'
+  ruby "1.9.3"
 
-# Postgres
-gem 'pg'
+  # Rails
+  gem 'rails', '3.2.11'
 
-# Elastic search
-#gem 'tire'
+  # Postgres
+  gem 'pg'
 
-# Web server
-gem 'thin'
+  # Elastic search
+  #gem 'tire'
 
-# Pagination
-gem 'kaminari'
+  # Web server
+  gem 'thin'
 
-# Error pages
-gem 'goalie'
+  # Pagination
+  gem 'kaminari'
 
-# Markdown
-gem 'redcarpet'
+  # Error pages
+  gem 'goalie'
 
-# Code coloring
-gem 'pygmentize'
+  # Markdown
+  gem 'redcarpet'
 
-# HTML Parsing
-#gem 'nokogiri'
+  # Code coloring
+  gem 'pygmentize'
 
-#
-gem 'asset_sync'
+  # HTML Parsing
+  #gem 'nokogiri'
 
-group :assets do
-  # Stylesheet
-  gem 'sass', '~> 3.2.0.alpha.277'
-  gem 'sass-rails'
-  gem 'bourbon'
-
-  # Javascript
-  gem 'coffee-rails'
-  gem 'uglifier'
-  gem 'jquery-rails'
-end
-
-group :development do
-  gem 'sqlite3'
-  gem 'quiet_assets'
-  gem 'foreman'
-end
-
-group :test do
-  gem 'minitest'
-  gem 'capybara'
-  gem 'turn'
-  gem 'simplecov', :require => false
-end
-
-group :production do
-
-  # Memcached
-  gem 'dalli'
-
-  # Assets
+  #
   gem 'asset_sync'
-  # gem 'dalli'
 
-end
+  group :assets do
+    # Stylesheet
+    gem 'sass', '~> 3.2.0.alpha.277'
+    gem 'sass-rails'
+    gem 'bourbon'
+
+    # Javascript
+    gem 'coffee-rails'
+    gem 'uglifier'
+    gem 'jquery-rails'
+  end
+
+  group :development do
+    gem 'sqlite3'
+    gem 'quiet_assets'
+    gem 'foreman'
+  end
+
+  group :test do
+    gem 'minitest'
+    gem 'capybara'
+    gem 'turn'
+    gem 'simplecov', :require => false
+  end
+
+  group :production do
+
+    # Memcached
+    gem 'dalli'
+
+    # Assets
+    gem 'asset_sync'
+
+  end

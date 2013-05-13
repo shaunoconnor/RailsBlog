@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+
 # Rails
 gem 'rails', '3.2.11'
 
@@ -27,8 +29,11 @@ gem 'pygmentize'
 # HTML Parsing
 #gem 'nokogiri'
 
-#
+# assets
 gem 'asset_sync'
+
+# new relic - monitoring
+gem 'newrelic_rpm'
 
 group :assets do
   # Stylesheet
@@ -56,6 +61,9 @@ group :test do
 end
 
 group :production do
+
+  # unicorn 
+  gem 'unicorn'
 
   # Memcached
   gem 'dalli'

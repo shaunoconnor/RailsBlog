@@ -14,4 +14,7 @@ coverage
 rails_best_practices_output.html
 .powder
 .somthing
+<<<<<<< HEAD
+=======
 .vagrant
+>>>>>>> e499ebf3551412093c895e70655964db7188ff7c

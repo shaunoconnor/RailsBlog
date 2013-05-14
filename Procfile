@@ -1,1 +1,1 @@
-web: bundle exec thin start --port $PORT
+web: bundle exec unicorn_rails -p $PORT -c ./config/unicorn.rb

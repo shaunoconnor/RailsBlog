@@ -1,68 +1,67 @@
-  source 'https://rubygems.org'
+source 'https://rubygems.org'
 
-  ruby "1.9.3"
+ruby "1.9.3"
 
-  # Rails
-  gem 'rails', '3.2.11'
+# Rails
+gem 'rails', '3.2.11'
 
-  # Postgres
-  gem 'pg'
+# Postgres
+gem 'pg'
 
-  # Elastic search
-  #gem 'tire'
+# Elastic search
+#gem 'tire'
 
-  # Web server
-  gem 'thin'
 
-  # Pagination
-  gem 'kaminari'
+# Pagination
+gem 'kaminari'
 
-  # Error pages
-  gem 'goalie'
+# Error pages
+gem 'goalie'
 
-  # Markdown
-  gem 'redcarpet'
+# Markdown
+gem 'redcarpet'
 
-  # Code coloring
-  gem 'pygmentize'
+# Code coloring
+gem 'pygmentize'
 
-  # HTML Parsing
-  #gem 'nokogiri'
+# assets
+gem 'asset_sync'
 
-  #
+# new relic - monitoring
+gem 'newrelic_rpm'
+
+group :assets do
+  # Stylesheet
+  gem 'sass', '~> 3.2.0.alpha.277'
+  gem 'sass-rails'
+  gem 'bourbon'
+
+  # Javascript
+  gem 'coffee-rails'
+  gem 'uglifier'
+  gem 'jquery-rails'
+  # Assets
   gem 'asset_sync'
+end
 
-  group :assets do
-    # Stylesheet
-    gem 'sass', '~> 3.2.0.alpha.277'
-    gem 'sass-rails'
-    gem 'bourbon'
+group :development do
+  gem 'sqlite3'
+  gem 'quiet_assets'
+  gem 'foreman'
+end
 
-    # Javascript
-    gem 'coffee-rails'
-    gem 'uglifier'
-    gem 'jquery-rails'
-  end
+group :test do
+  gem 'minitest'
+  gem 'capybara'
+  gem 'turn'
+  gem 'simplecov', :require => false
+end
 
-  group :development do
-    gem 'sqlite3'
-    gem 'quiet_assets'
-    gem 'foreman'
-  end
+group :production do
 
-  group :test do
-    gem 'minitest'
-    gem 'capybara'
-    gem 'turn'
-    gem 'simplecov', :require => false
-  end
+  # unicorn
+  gem 'unicorn'
 
-  group :production do
-
-    # Memcached
-    gem 'dalli'
-
-    # Assets
-    gem 'asset_sync'
-
-  end
+  # Memcached
+  gem 'dalli'
+end

@@ -20,6 +20,12 @@ ShaunOConnorBlog::Application.configure do
   #  request.ssl? ? "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com" : "http://#{ENV['FOG_DIRECTORY']}"
   #end
 
+  config.action_controller.asset_host = 'http://d7j7kiuuak8s6.cloudfront.net'
+
+  # enable asset pipeline
+  config.assets.enabled  = true
+  config.assets.digest = true
+
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = true
 

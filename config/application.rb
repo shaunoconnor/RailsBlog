@@ -2,6 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require *Rails.groups(:assets => %w(development test))
@@ -13,7 +14,7 @@ require 'goalie/rails'
 
 module ShaunOConnorBlog
   class Application < Rails::Application
-    
+
     config.autoload_paths << "#{config.root}/lib"
 
     config.time_zone = 'Central Time (US & Canada)'
@@ -25,6 +26,7 @@ module ShaunOConnorBlog
       g.test_framework  :rspec, :fixture => false
     end
 
+    config.assets.initialize_on_precompile = false
     config.filter_parameters << :password
 
     config.secret_token = "n7@XY2a!pUj{oYK*cQ{VqVDH[8DRRhZdQQy!i,Rnw;BZS/7Xk_S8p9Wd@m"

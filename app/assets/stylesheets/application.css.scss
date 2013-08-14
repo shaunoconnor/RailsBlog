@@ -149,7 +149,7 @@ body > header h1 {
   font-size: 3.8em;
 
   @media #{$small-query} {
-     font-size: 2em;
+     font-size: 2.6em;
   }
 
   a, a:hover {
@@ -208,7 +208,7 @@ body > section {
 // Header
 body > header {
 
-  height: 100px;
+  //height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -221,7 +221,26 @@ body > header {
   padding-bottom  : 2.4em;
 
   @include background-opacity(#fff, 0.9);
-  
+
+  -o-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+
+  //height: 126px;
+
+  margin-bottom: 10px;
+
+  @media #{$small-query} {
+      // width: 280px;
+  }
+
+  @media #{$small-query} {
+  }
+
+  @media #{$iphone-query} {
+    // height: 126px;
+  }
+
   p {
     color: #222;
     margin: 10px;
@@ -229,26 +248,9 @@ body > header {
 
     @media #{$small-query} {
       // font-size: 1em;
-
-      // margin: 20px; 
+      // margin: 20px;
     }
   }
-  nav{ 
-    @media #{$small-query} {
-    
-      // width: 280px;
-    }
-  }
-  
-  @media #{$small-query} {
-    height: 66px;
-  }
-
-  -o-transition:all .2s ease-in-out; 
-  -moz-transition:all .2s ease-in-out; 
-  -webkit-transition:all .2s ease-in-out;
-
-  //@include animation(all .2s ease-in-out);
 }
 
 a.hire, a.hire:hover {

@@ -20,7 +20,7 @@ ShaunOConnorBlog::Application.configure do
   #  request.ssl? ? "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com" : "http://#{ENV['FOG_DIRECTORY']}"
   #end
 
-  config.action_controller.asset_host = 'http://d7j7kiuuak8s6.cloudfront.net'
+  # config.action_controller.asset_host = 'http://d7j7kiuuak8s6.cloudfront.net'
 
   # enable asset pipeline
   config.assets.enabled  = true

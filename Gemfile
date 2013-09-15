@@ -63,5 +63,5 @@ group :production do
   gem 'unicorn'
 
   # Memcached
-  # gem 'dalli'
+  gem 'dalli'
 end

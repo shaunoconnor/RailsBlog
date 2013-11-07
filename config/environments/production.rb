@@ -1,4 +1,4 @@
-haunOConnorBlog::Application.configure do
+ShaunOConnorBlog::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
   # config.middleware.insert_before 0, 'ShaunOConnor::PreferredHost'
 

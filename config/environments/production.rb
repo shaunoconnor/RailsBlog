@@ -1,4 +1,4 @@
-ShaunOConnorBlog::Application.configure do
+haunOConnorBlog::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
   # config.middleware.insert_before 0, 'ShaunOConnor::PreferredHost'
 
@@ -19,12 +19,6 @@ ShaunOConnorBlog::Application.configure do
   #config.action_controller.asset_host = Proc.new do |source, request|
   #  request.ssl? ? "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com" : "http://#{ENV['FOG_DIRECTORY']}"
   #end
-
-  # config.action_controller.asset_host = 'http://d7j7kiuuak8s6.cloudfront.net'
-
-  # enable asset pipeline
-  config.assets.enabled  = true
-  config.assets.digest = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = true

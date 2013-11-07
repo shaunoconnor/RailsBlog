@@ -23,14 +23,14 @@ ShaunOConnorBlog::Application.configure do
   # config.action_controller.asset_host = 'http://d7j7kiuuak8s6.cloudfront.net'
 
   # enable asset pipeline
-  config.assets.enabled  = false
-  # config.assets.digest = true
+  config.assets.enabled  = true
+  config.assets.digest = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
-  # config.assets.digest = true
+  config.assets.digest = true
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH

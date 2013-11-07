@@ -19,5 +19,3 @@ externalLinks = ->
 # On DOM load, change external links to open in a new window
 addLoadEvent(externalLinks)
 
-
-// comment

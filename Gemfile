@@ -27,6 +27,8 @@ gem 'pygmentize'
 # assets
 gem 'asset_sync'
 
+gem 'figaro'
+
 # new relic - monitoring
 gem 'newrelic_rpm'
 

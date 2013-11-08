@@ -198,9 +198,12 @@ body > section {
   margin-top: 15em;
   
   @media #{$small-query} {
-     margin-top: 10em;
+     margin-top: 12em;
   }
 
+  @media #{$iphone-query} {
+     margin-top: 10em;
+  }
   -o-transition:all .2s ease-in-out; 
   -moz-transition:all .2s ease-in-out; 
   -webkit-transition:all .2s ease-in-out;

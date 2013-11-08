@@ -16,8 +16,5 @@ rails_best_practices_output.html
 .somthing
 .vagrant
 
-#constants
-config/initializers/constants.rb
-
 # Ignore application configuration
 /config/application.yml

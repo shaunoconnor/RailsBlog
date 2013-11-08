@@ -1,5 +1,5 @@
 
-// @import "bourbon";
+@import "bourbon";
 @import "globals/variables";
 @import "globals/mixins";
 @import "components/reset";
@@ -197,10 +197,13 @@ body > section {
 
   margin-top: 15em;
   
+  @media #{$small-query} {
+     margin-top: 12em;
+  }
+
   @media #{$iphone-query} {
      margin-top: 10em;
   }
-
   -o-transition:all .2s ease-in-out; 
   -moz-transition:all .2s ease-in-out; 
   -webkit-transition:all .2s ease-in-out;
@@ -216,7 +219,7 @@ body > header {
   left: 50%;
   margin-left: -50%;
   z-index: 1000;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
   color: #949494;
   padding-top: 2.4em;
   padding-bottom: 2.4em;
@@ -227,13 +230,20 @@ body > header {
   -moz-transition:all .2s ease-in-out;
   -webkit-transition:all .2s ease-in-out;
 
+  //height: 126px;
+
+  // margin-bottom: 10px;
+
+  @media #{$small-query} {
+      // width: 280px;
+  }
 
   @media #{$small-query} {
   }
 
   @media #{$iphone-query} {
     padding-top: 1.0em;
-    padding-bottom: 1.0em;
+    padding-bottom: 0.8em;
   }
 
   p {
@@ -242,6 +252,8 @@ body > header {
     font-size:1em;
 
     @media #{$small-query} {
+      // font-size: 1em;
+      // margin: 20px;
     }
   }
 }

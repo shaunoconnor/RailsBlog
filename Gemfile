@@ -24,9 +24,6 @@ gem 'redcarpet'
 # Code coloring
 gem 'pygmentize'
 
-# assets
-gem 'asset_sync'
-
 gem 'figaro'
 
 # new relic - monitoring
@@ -42,6 +39,7 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'jquery-rails'
+  
   # Assets
   gem 'asset_sync'
 end

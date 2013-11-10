@@ -14,11 +14,13 @@ ShaunOConnorBlog::Application.configure do
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
-  config.assets.precompile += ['admin.js', 'admin.css']
+  config.assets.precompile += %w(admin.css admin.js )
 
-  #config.action_controller.asset_host = Proc.new do |source, request|
-  #  request.ssl? ? "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com" : "http://#{ENV['FOG_DIRECTORY']}"
-  #end
+  config.action_controller.asset_host = "http://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
+
+  # config.action_controller.asset_host = Proc.new do |source, request|
+  #   request.ssl? ? "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com" : "http://#{ENV['FOG_DIRECTORY']}"
+  # end
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = true

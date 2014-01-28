@@ -23,7 +23,7 @@ body {
   color: $text-color;
   font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5em;
   padding: 0 20px;
   text-align: center;
@@ -147,7 +147,7 @@ h1 {
 
 body > header h1 {
 
-  font-size: 3.8em;
+  font-size: 2.8em;
 
   @media #{$small-query} {
      font-size: 1.8em;

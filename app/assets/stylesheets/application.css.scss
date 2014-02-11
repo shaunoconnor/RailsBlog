@@ -203,7 +203,7 @@ body > section, body > footer {
 
 body > section {
 
-  margin-top: 15em;
+  margin-top: 14em;
   
   @media #{$small-query} {
      margin-top: 12em;
@@ -229,8 +229,8 @@ body > header {
   z-index: 1000;
   border-bottom: 2px solid #ddd;
   color: #949494;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
 
   @include background-opacity(#fff, 0.9);
 

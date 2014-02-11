@@ -164,6 +164,10 @@ body > header h1 {
   }
 }
 
+body > header p {
+  font-family: $titleFont;
+  font-size: 2.0rem;
+}
 
 h2 {
   font-size: 1.3em;

@@ -47,6 +47,9 @@ group :assets do
 end
 
 group :development do
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+  gem 'rb-fsevent'
   gem 'sqlite3'
   gem 'quiet_assets'
   gem 'foreman'

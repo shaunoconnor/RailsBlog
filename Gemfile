@@ -24,9 +24,6 @@ gem 'redcarpet'
 # Code coloring
 gem 'pygmentize'
 
-# assets
-gem 'asset_sync'
-
 gem 'figaro'
 
 # new relic - monitoring
@@ -53,6 +50,7 @@ group :development do
 end
 
 group :test do
+  gem 'miniskirt'
   gem 'minitest'
   gem 'capybara'
   gem 'turn'

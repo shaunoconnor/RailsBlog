@@ -27,19 +27,19 @@ describe Post do
     post.tags.map(&:name).must_equal(%w[foo bar])
     post.tag_names.must_equal('foo bar')
   end
-  
+
   it 'requires post date, name, and content' do
     post = Post.create
     post.errors[:published_at].wont_be_nil
     post.errors[:title].wont_be_nil
     post.errors[:content].wont_be_nil
   end
-    
-  it 'users permalink as to_param' do
-    post = Factory(:post, :permalink => 'awesome-cheeseburger')
-    post.to_param.must_equal('awesome-cheeseburger')
-  end
-  
+
+  # it 'users permalink as to_param' do
+  #   post = Factory(:post, :permalink => 'awesome-cheeseburger')
+  #   post.to_param.must_equal('awesome-cheeseburger')
+  # end
+
   it 'knows if it\'s the last published post' do
     a = Factory(:post, :published_at => 2.weeks.ago)
     b = Factory(:post, :published_at => 1.week.ago)

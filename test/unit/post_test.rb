@@ -35,6 +35,8 @@ describe Post do
     post.errors[:content].wont_be_nil
   end
 
+
+
   # it 'users permalink as to_param' do
   #   post = Factory(:post, :permalink => 'awesome-cheeseburger')
   #   post.to_param.must_equal('awesome-cheeseburger')

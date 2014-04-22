@@ -58,10 +58,10 @@ group :test do
 end
 
 group :production do
-
   # unicorn
   gem 'unicorn'
 
   # Memcached
+  gem 'memcachier'
   gem 'dalli'
 end

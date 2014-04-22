@@ -5,9 +5,6 @@ ruby "2.0.0"
 # Rails
 gem 'rails', '3.2.11'
 
-# Postgres
-# gem 'pg'
-
 # Elastic search
 #gem 'tire'
 
@@ -58,6 +55,9 @@ group :test do
 end
 
 group :production do
+  # Postgres
+  gem 'pg'
+
   # unicorn
   gem 'unicorn'
 

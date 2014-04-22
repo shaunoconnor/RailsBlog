@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby "1.9.3"
+ruby "2.0.0"
 
 # Rails
 gem 'rails', '3.2.11'
 
 # Postgres
-gem 'pg'
+# gem 'pg'
 
 # Elastic search
 #gem 'tire'
